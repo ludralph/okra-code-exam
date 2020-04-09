@@ -25,14 +25,6 @@ class App extends Component {
     this.props.dispatch(getTotalBalance());
   }
 
-  // getAllTransactions = () => {
-  //   axios.get('/api/v1/transactions')
-  //     .then(response => this.setState({
-  //       transactions: response.data.message
-  //     }))
-  //     .catch(error => console.error(error));
-  // }
-
   drawerToggleClickHandler = () => {
     this.setState((prevState) => {
       return {
