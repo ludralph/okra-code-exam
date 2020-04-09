@@ -1,8 +1,39 @@
-h1 {
-  color: green;
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
 }
 
-body {
-  text-align: center;
-  margin: auto;
+.side-drawer{
+    height: 100%;
+    background-color: white;
+    box-shadow: 2px 0px 5px rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+    left:1;
+    width: 50%;
+    max-width: 195px;
+    z-index: 200;
+}
+
+.side-drawer ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.backdrop{
+    position: fixed;
+    top: 0;
+    width: 80%  ;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+    z-index: 100;
 }
