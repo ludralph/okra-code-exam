@@ -1,9 +1,11 @@
 import React from 'react';
+import AvatarImage from '../avatar.png'
 
 const SideDrawer = props => (
   <nav className='side-drawer'>
     <div className='flex items-center mt-4 justify-center'>
-      <div className='rounded-full bg-gray-600 text-xs h-16 w-16 mr-3'>
+      <div className='text-xs h-16 w-16 mr-3'>
+        <img className='rounded-full' src={AvatarImage} />
 
       </div>
       <div className='text-xs '>
@@ -11,23 +13,31 @@ const SideDrawer = props => (
         <p>Product Designer</p>
       </div>
     </div>
-    <ul class="list-none text-xs  text-center">
-      <li class="my-6 ">
+    <ul className="list-none text-xs  text-center">
+      <li className="my-6 ">
+        <i className="fas fa-tachometer-alt px-4"></i>
         <a href="#"></a>Dashboard
         </li>
-      <li class="my-3">
+      <li className="my-3">
+        <i className="fas fa-exchange-alt px-4"></i>
         <a href="#"></a>Transfers
         </li>
-      <li class="my-3">
-        <a href="#"></a>Credit
+      <li className="my-3">
+        <i className="fas fa-share px-4"></i>
+        <a href="#"></a>Credits
         </li>
-      <li class="my-3">
-        <a href="#"></a>Debit
+      <li className="my-3">
+        <i className="fas fa-reply px-4"></i>
+        <a href="#"></a>Debits
         </li>
-      <li class="my-8">
+        <div className='my-5'></div>
+        <hr className="px-5 my-8" align='center' width='80%' height='50'/>
+      <li className="my-8">
+      <i className="fas fa-cog px-4"></i>
         <a href="#"></a>Settings
         </li>
       <li>
+      <i className="fas fa-sign-out-alt px-4 "></i>
         <a href="#"></a>Sign Out
         </li>
     </ul>
